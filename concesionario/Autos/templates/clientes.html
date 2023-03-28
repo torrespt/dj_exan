@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>autos</title>
+</head>
+<body>
+    <div class="container-fluid">
+    
+        <h1>Inicio - Listado de Autos</h1>
+        <ol>
+            {% for p in listado %}
+                    <li> {{ p }} </li>
+            {% endfor %}
+        </ol>
+
+        <h1>Listado de autos tipo tabla</h1>
+        <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">nombre</th>
+                <th scope="col">apellido</th>
+                <th scope="col">direccion</th>
+                <th scope="col">email</th>
+                <th scope="col">telefono</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Andres</td>
+                <td>lopez</td>
+                <td>caloto</td>
+                <td>"anflopez@gmail.com"</td>
+                <td>"3245675443"</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>David</td>
+                <td>herrera</td>
+                <td>caloto</td>
+                <td>"davin@gmail.com"</td>
+                <td>"3123457895"</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Angel</td>
+                <td>canas</td>
+                <td>corinto</td>
+                <td>"angel@gmail.com"</td>
+                <td>"3756748322"</td>
+            
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Danny</td>
+                <td>vasquez</td>
+                <td>santander</td>
+                <td>"Dany@gmail.com"</td>
+                <td>"3452765453"</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Juan</td>
+                <td>obando</td>
+                <td>santander</td>
+                <td>"Juan@gmail.com"</td>
+                <td>"3543447865"</td>
+              </tr>
+            </tbody>
+          </table>
+         
+    </div>
+   
+</body>
+</html>

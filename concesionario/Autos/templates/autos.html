@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>autos</title>
+</head>
+<body>
+    <div class="container-fluid">
+    
+        <h1>Inicio - Listado de Autos</h1>
+        <ol>
+            {% for p in listado %}
+                    <li> {{ p }} </li>
+            {% endfor %}
+        </ol>
+
+        <h1>Listado de autos tipo tabla</h1>
+        <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">marca</th>
+                <th scope="col">nombre</th>
+                <th scope="col">modelo</th>
+                <th scope="col">color</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Audi</td>
+                <td>saloon</td>
+                <td>2018</td>
+                <td>negro</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Chevrolet</td>
+                <td>sparkGT</td>
+                <td>2020</td>
+                <td>verde</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Chevrolet</td>
+                <td>sprint</td>
+                <td>2004</td>
+                <td>gris</td>
+            
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Toyota</td>
+                <td>TXl</td>
+                <td>2019</td>
+                <td>rojo</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Mercedes</td>
+                <td>gla </td>
+                <td>2019</td>
+                <td>azul</td>
+              </tr>
+            </tbody>
+          </table>
+          <h1>Listado de Tareas desde Python</h1>
+          <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              {% for p in listado %}
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{{ p }}</td>
+                  <td>#</td>
+                </tr>
+              </tbody>
+              {% endfor %}
+            </table>
+    </div>
+   
+</body>
+</html>
